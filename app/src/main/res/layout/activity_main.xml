@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+    <!--设置顶部在底部的上方-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/fl_main_bottom">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/main_top_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_40" />
+    </FrameLayout>
+    <!--底部导航栏-->
+    <FrameLayout
+        android:id="@+id/fl_main_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_red">
+
+        <!--RadioGroup是一个线性布局-->
+        <RadioGroup
+            android:id="@+id/rg_main_top"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/main_top_rb_shanghai"
+            style="@style/main_tab_rb_style"
+            android:drawableTop="@drawable/selector_main_top_tab_shanghai"
+            android:text="@string/str_main_shanghai" />
+
+        <RadioButton
+            android:id="@+id/main_top_rb_hangzhou"
+            style="@style/main_tab_rb_style"
+            android:drawableTop="@drawable/selector_main_top_tab_hangzhou"
+            android:text="@string/str_mian_hangzhou" />
+        </RadioGroup>
+        <RadioGroup
+            android:id="@+id/rg_main_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <RadioButton
+                android:id="@+id/main_top_rb_beijing"
+                style="@style/main_tab_rb_style"
+                android:drawableTop="@drawable/selector_main_bottom_tab_beijing"
+                android:text="@string/str_main_beijing" />
+
+            <RadioButton
+                android:id="@+id/main_top_rb_s_shenzhen"
+                style="@style/main_tab_rb_style"
+                android:drawableTop="@drawable/selector_main_bottom_tab_shenzhen"
+                android:text="@string/str_mian_shenzhen" />
+        </RadioGroup>
+    </FrameLayout>
+</RelativeLayout>

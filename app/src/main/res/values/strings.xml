@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">每日学习</string>
+    <string name="str_main_shanghai">上海</string>
+    <string name="str_mian_hangzhou">杭州</string>
+    <string name="str_main_beijing">北京</string>
+    <string name="str_mian_shenzhen">深圳</string>
+</resources>
