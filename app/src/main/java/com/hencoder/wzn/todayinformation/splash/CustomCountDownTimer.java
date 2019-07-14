@@ -1,4 +1,4 @@
-package com.hencoder.wzn.todayinformation.view;
+package com.hencoder.wzn.todayinformation.splash;
 
 import android.os.Handler;
 
